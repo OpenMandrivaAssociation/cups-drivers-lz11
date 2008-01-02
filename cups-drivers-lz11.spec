@@ -11,6 +11,7 @@ Source0:	http://easynews.dl.sourceforge.net/sourceforge/lz11/lz11-V2-%{version}.
 Conflicts:	cups-drivers = 2007
 Conflicts:	printer-utils = 2007
 Conflicts:	printer-filters = 2007
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 A Linux printer driver/filter for the Lexmark Z11 and the Compaq IJ300 printer,
