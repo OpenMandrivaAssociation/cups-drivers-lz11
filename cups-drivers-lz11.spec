@@ -3,7 +3,7 @@
 Summary:	Printer Drivers for the Lexmark Z11 and Compaq IJ300 printer
 Name:		cups-drivers-%{rname}
 Version:	1.2
-Release:	%mkrel 3
+Release:	%mkrel 4
 License:	GPL
 Group:		System/Printing
 URL:		http://sourceforge.net/projects/lz11/
