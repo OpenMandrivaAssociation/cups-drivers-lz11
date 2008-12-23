@@ -3,11 +3,12 @@
 Summary:	Printer Drivers for the Lexmark Z11 and Compaq IJ300 printer
 Name:		cups-drivers-%{rname}
 Version:	1.2
-Release:	%mkrel 5
+Release:	%mkrel 6
 License:	GPL
 Group:		System/Printing
 URL:		http://sourceforge.net/projects/lz11/
 Source0:	http://easynews.dl.sourceforge.net/sourceforge/lz11/lz11-V2-%{version}.tar.gz
+Patch0:		lz11-V2-1.2-format_not_a_string_literal_and_no_format_arguments.diff
 Conflicts:	cups-drivers = 2007
 Conflicts:	printer-utils = 2007
 Conflicts:	printer-filters = 2007
@@ -25,9 +26,10 @@ This package contains CUPS drivers (PPD) for the following printers:
 %prep
 
 %setup -q -n lz11-V2-%{version}
+%patch0 -p0
 
 %build
-make CFLAGS="%{optflags}"
+make CFLAGS="%{optflags}" LDFLAGS="%{ldflags}"
 
 %install
 rm -rf %{buildroot}
