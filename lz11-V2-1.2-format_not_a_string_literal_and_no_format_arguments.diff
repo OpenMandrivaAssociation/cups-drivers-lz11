@@ -1,0 +1,14 @@
+--- cZ11-V2.c	2005-12-18 10:38:48.000000000 +0100
++++ cZ11-V2.c.oden	2008-12-23 21:07:11.000000000 +0100
+@@ -2392,9 +2392,9 @@ PrintHelp (int exitCode)
+ {
+   fprintf (stderr, VersionInfo, VERSION);
+   if (exitCode)
+-    fprintf (stderr, ShortHelp);
++    fprintf (stderr, "%s", ShortHelp);
+   else
+-    fprintf (stderr, LongHelp);
++    fprintf (stderr, "%s", LongHelp);
+   exit (exitCode);
+ }
+ 
