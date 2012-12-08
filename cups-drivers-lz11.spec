@@ -3,7 +3,7 @@
 Summary:	Printer Drivers for the Lexmark Z11 and Compaq IJ300 printer
 Name:		cups-drivers-%{rname}
 Version:	1.2
-Release:	%mkrel 10
+Release:	%mkrel 11
 License:	GPL
 Group:		System/Printing
 URL:		http://sourceforge.net/projects/lz11/
@@ -55,3 +55,55 @@ rm -rf %{buildroot}
 %attr(0755,root,root) %{_bindir}/*
 %attr(0644,root,root) %{_datadir}/cups/model/Lexmark-Z11-lz11-V2.ppd*
 %attr(0644,root,root) %{_datadir}/cups/model/Compaq-IJ300-lz11-V2.ppd*
+
+
+%changelog
+* Tue May 03 2011 Oden Eriksson <oeriksson@mandriva.com> 1.2-10mdv2011.0
++ Revision: 663439
+- mass rebuild
+
+* Tue Nov 30 2010 Oden Eriksson <oeriksson@mandriva.com> 1.2-9mdv2011.0
++ Revision: 603871
+- rebuild
+
+* Sun Mar 14 2010 Oden Eriksson <oeriksson@mandriva.com> 1.2-8mdv2010.1
++ Revision: 518843
+- rebuild
+
+* Sun Aug 09 2009 Oden Eriksson <oeriksson@mandriva.com> 1.2-7mdv2010.0
++ Revision: 413287
+- rebuild
+
+* Tue Dec 23 2008 Oden Eriksson <oeriksson@mandriva.com> 1.2-6mdv2009.1
++ Revision: 318071
+- fix build with -Werror=format-security (P0)
+- use %%ldflags
+
+* Mon Jun 16 2008 Thierry Vignaud <tv@mandriva.org> 1.2-5mdv2009.0
++ Revision: 220541
+- rebuild
+
+* Fri Jan 11 2008 Thierry Vignaud <tv@mandriva.org> 1.2-4mdv2008.1
++ Revision: 149148
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Thu Aug 30 2007 Oden Eriksson <oeriksson@mandriva.com> 1.2-3mdv2008.0
++ Revision: 75328
+- fix deps (pixel)
+
+* Thu Aug 16 2007 Oden Eriksson <oeriksson@mandriva.com> 1.2-2mdv2008.0
++ Revision: 64149
+- use the new System/Printing RPM GROUP
+
+* Mon Aug 13 2007 Oden Eriksson <oeriksson@mandriva.com> 1.2-1mdv2008.0
++ Revision: 62508
+- Import cups-drivers-lz11
+
+
+
+* Mon Aug 13 2007 Oden Eriksson <oeriksson@mandriva.com> 1.2-1mdv2008.0
+- initial Mandriva package
