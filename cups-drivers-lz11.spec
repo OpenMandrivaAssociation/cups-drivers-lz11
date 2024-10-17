@@ -6,7 +6,7 @@ Version:	1.2
 Release:	24
 License:	GPLv2
 Group:		System/Printing
-URL:		http://sourceforge.net/projects/lz11/
+URL:		https://sourceforge.net/projects/lz11/
 Source0:	http://easynews.dl.sourceforge.net/sourceforge/lz11/lz11-V2-%{version}.tar.gz
 Patch0:		lz11-V2-1.2-format_not_a_string_literal_and_no_format_arguments.diff
 
