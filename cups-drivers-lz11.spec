@@ -10,6 +10,7 @@ URL:		https://sourceforge.net/projects/lz11/
 Source0:	http://easynews.dl.sourceforge.net/sourceforge/lz11/lz11-V2-%{version}.tar.gz
 Patch0:		lz11-V2-1.2-format_not_a_string_literal_and_no_format_arguments.diff
 
+BuildRequires:	make
 %description
 A Linux printer driver/filter for the Lexmark Z11 and the Compaq IJ300 printer,
 supporting color and b/w printing, variable page size and more.
